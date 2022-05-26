@@ -28,10 +28,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = ['142.93.63.197',
-                 'localhost',
-                 'django-staging.nilaksh.me',
-                 ]
+ALLOWED_HOSTS = ['django-staging.nilaksh.me']
 
 
 # Application definition
