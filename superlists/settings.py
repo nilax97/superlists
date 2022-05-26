@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['142.93.63.197',
                  'localhost',
+                 'django-staging.nilaksh.me',
                  ]
 
 
