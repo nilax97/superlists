@@ -128,3 +128,11 @@ STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../static'))
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+from .passwords_file import sendinblue_password
+
+EMAIL_HOST = 'smtp-relay.sendinblue.com'
+EMAIL_HOST_USER = 'agarwal.nilaksh@gmail.com'
+EMAIL_HOST_PASSWORD = sendinblue_password
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
