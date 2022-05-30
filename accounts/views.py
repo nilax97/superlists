@@ -26,7 +26,7 @@ def login(request):
 	print('login view', file=sys.stderr)
 	uid = request.GET.get('uid')
 	user = authenticate(uid=uid)
-
+	print('User:',user,file=sys.stderr)
 	if user is not None:
 		auth_login(request, user)
 
