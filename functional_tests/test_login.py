@@ -36,9 +36,9 @@ class LoginTest(FunctionalTest):
 						return body
 				time.sleep(5)
 		finally:
-		if email_id:
-			inbox.dele(email_id)
-		inbox.quit()
+			if email_id:
+				inbox.dele(email_id)
+			inbox.quit()
 
 
 	def test_can_get_email_link_to_log_in(self):
