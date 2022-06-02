@@ -10,11 +10,11 @@ class FunctionalTest(StaticLiveServerTestCase):
 
 	def setUp(self):
 		self.browser = webdriver.Firefox()
-		staging_server = os.environ.get('STAGING_SERVER')
+		self.staging_server = os.environ.get('STAGING_SERVER')
 		# staging_server = "django-staging.nilaksh.me"
 		# staging_server = "django-live.nilaksh.me"
 		# staging_server = None
-		if staging_server:
+		if self.staging_server:
 			self.live_server_url = 'http://' + staging_server
 
 	def tearDown(self):
